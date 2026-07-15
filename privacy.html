@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AURENA — Privacy Policy</title>
+<title>RACERZ — Privacy Policy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -59,7 +59,6 @@
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--text);
     margin: 40px 0 12px;
     padding-top: 16px;
     border-top: 1px solid var(--rule);
@@ -70,24 +69,9 @@
   li { margin-bottom: 6px; }
   a { color: var(--accent); }
   a:hover { text-decoration: none; }
-  .toc {
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    padding: 16px 20px;
-    border-radius: 4px;
-    margin-bottom: 32px;
-    font-size: 14px;
-  }
-  .toc strong {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    display: block;
-    margin-bottom: 8px;
-  }
-  .toc ol { margin: 0; padding-left: 20px; }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 12px; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: 'Chakra Petch', sans-serif; letter-spacing: 1px; text-transform: uppercase; font-size: 12px; }
   footer {
     margin-top: 48px;
     padding-top: 16px;
@@ -110,113 +94,101 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="brand">AURENA</div>
+    <div class="brand">RACERZ</div>
     <h1>Privacy Policy</h1>
-    <div class="meta">Version 1.3 — Effective 28 April 2026</div>
+    <div class="meta">Version 2.0 — Effective 15 July 2026</div>
   </header>
 
-  <nav class="toc">
-    <strong>Contents</strong>
-    <ol>
-      <li><a href="#controller">Data Controller</a></li>
-      <li><a href="#collect">Data We Collect</a></li>
-      <li><a href="#use">How We Use Your Data</a></li>
-      <li><a href="#ai">AI-Powered Features</a></li>
-      <li><a href="#sharing">Data Sharing</a></li>
-      <li><a href="#strava">Strava Integration</a></li>
-      <li><a href="#transfers">International Transfers</a></li>
-      <li><a href="#retention">Data Retention</a></li>
-      <li><a href="#rights">Your Rights</a></li>
-      <li><a href="#children">Children</a></li>
-      <li><a href="#security">Security</a></li>
-      <li><a href="#changes">Changes</a></li>
-    </ol>
-  </nav>
+  <h2>1. Who We Are</h2>
+  <p>The data controller is <strong>Bred Applications</strong>, CVR 45915905, Denmark. Contact: <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>.</p>
+  <p>You can lodge a complaint with the Danish Data Protection Agency (<a href="https://www.datatilsynet.dk">Datatilsynet</a>) or the supervisory authority in your own country.</p>
 
-  <h2 id="controller">1. Data Controller</h2>
-  <p>
-    Bred Applications<br>
-    Doritshave 24, 6040 Egtved, Denmark<br>
-    CVR: 45915905<br>
-    Contact: <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>
-  </p>
+  <h2>2. Data We Collect</h2>
+  <p><strong>Account:</strong> email address, username, display name, avatar — via Apple Sign-In, Google Sign-In, or email magic link. We never collect or store passwords.</p>
+  <p><strong>Physiological data (health data — explicit consent, see section 4):</strong> weight, height, date of birth, gender.</p>
+  <p><strong>Fitness and performance:</strong> distance, duration, pace, estimated calories, step count, cadence, per-kilometre splits, elevation, VDOT fitness score, fatigue profile, personal records, training zones.</p>
+  <p><strong>Competitive:</strong> ELO ratings, match history, XP, coins, rank, season progression, penalties.</p>
+  <p><strong>Social:</strong> posts, comments, likes, friendships, club membership, club chat messages, notifications.</p>
+  <p><strong>Device:</strong> a mock-location flag (anti-cheat) and a push notification token. <strong>We do not collect device model, OS version, advertising identifiers, contacts, or analytics events — RACERZ contains no analytics or advertising SDKs.</strong></p>
+  <p><strong>Payment:</strong> subscription status via RevenueCat, keyed to your user ID. Payment card details never reach us — Apple and Google process all payments.</p>
 
-  <h2 id="collect">2. Data We Collect</h2>
-  <p><strong>Account data:</strong> Email address, username, display name, profile picture (via Apple Sign-In, Google Sign-In, or email magic link).</p>
-  <p><strong>Physiological data (with explicit consent):</strong> Weight, height, date of birth, gender. Used for training metrics and matchmaking.</p>
-  <p><strong>Location data (with consent):</strong> GPS coordinates collected only during active runs. Raw coordinates are processed server-side for distance calculation and immediately discarded. Other users see only your relative distance, never your location.</p>
-  <p><strong>Fitness data:</strong> Run distance, duration, pace, estimated calories, step count, cadence, VDOT score, fatigue profile.</p>
-  <p><strong>Competitive data:</strong> ELO rating, match history, rank, XP, coins, power usage, season pass progression.</p>
-  <p><strong>Social data:</strong> Friend connections, feed posts, likes, comments, club membership, club chat messages, optional Friendly Reward labels (≤25 chars, e.g. "A coffee") attached to friend challenges, and the opponent's username on your completed friend-challenge runs. Rewards are stored alongside the run and appear on your public post only when you opt in via the per-post toggle.</p>
-  <p><strong>Device data:</strong> Device model, OS version, mock-location flag (for anti-cheat).</p>
-  <p><strong>Payment data:</strong> Transaction receipts and subscription status from Apple/Google. We never receive payment-card details.</p>
-  <p><strong>Downloaded content:</strong> Coach+ automatically downloads an AI voice model (~80 MB) on first activation. Music+ downloads audio tracks for offline playback. Stored locally on your device; may use mobile data.</p>
+  <h2>3. GPS and Location</h2>
+  <p>GPS coordinates are processed in real time during your runs for distance calculation and validation, and are <strong>never stored on our servers</strong> — no coordinates, no route polylines. Your routes are stored only on your own device.</p>
+  <p>If you share a run, other users see a normalized route <em>shape</em> that has been mathematically stripped of absolute position, together with your run statistics — never where you ran. During races, opponents see your relative progress, never your location.</p>
 
-  <h2 id="use">3. How We Use Your Data</h2>
+  <h2>4. Health Data and Your Explicit Consent</h2>
+  <p>Your weight, height, date of birth, gender, and derived fitness metrics (VDOT score, fatigue profile) are treated as health data under GDPR Article 9. We process them only with your <strong>explicit consent</strong>, which the app requests as a separate step — not bundled into acceptance of the Terms.</p>
+  <p>That consent covers these purposes: simulating your performance as an opponent, fair matchmaking, anti-cheat validation, and — when active — AI coaching. You can withdraw consent at any time in Settings; withdrawal disables the features that need the data and nothing else.</p>
+
+  <h2>5. How We Use Data</h2>
   <ul>
-    <li>Delivering the core service (run tracking, matchmaking, ELO).</li>
-    <li>Anti-cheat and match-integrity validation.</li>
-    <li>AI Coach analysis and training recommendations.</li>
-    <li>Push notifications you have opted into.</li>
-    <li>Aggregated, anonymized service improvement.</li>
+    <li><strong>Contract:</strong> providing the core service — run tracking, matchmaking, ELO, clubs, social features.</li>
+    <li><strong>Explicit consent:</strong> the health data described in section 4.</li>
+    <li><strong>Legitimate interests:</strong> service security, abuse prevention, and rate limiting (non-health signals only).</li>
+    <li><strong>Consent:</strong> optional features such as push notifications and calendar access.</li>
   </ul>
 
-  <h2 id="ai">4. AI-Powered Features (EU AI Act Compliance)</h2>
-  <p><strong>AI Coach.</strong> Generates personalized coaching text using OpenAI. Your run data and profile are sent to OpenAI under a Data Processing Agreement. OpenAI does not use your data to train its models. Text-to-speech is processed entirely on your device. You must consent before first use. Limited risk category.</p>
-  <p><strong>Matchmaking.</strong> ELO-based algorithm matching players by competitive performance only. No personal characteristics used. Minimal risk.</p>
-  <p><strong>Anti-cheat.</strong> Automated GPS validation detecting impossible movement patterns. May invalidate match results. You may request human review. Minimal risk.</p>
-  <p><strong>Fatigue analysis.</strong> Runs entirely on your device using local data. Minimal risk.</p>
-  <p><strong>AI-generated music.</strong> Music tracks available through Music+ are AI-generated compositions created using machine-learning models. They are not performed or composed by human artists.</p>
-  <p>We do not use AI for biometric identification, social scoring, emotion recognition, or any prohibited purpose under the EU AI Act.</p>
+  <h2>6. Opponent Simulation — What Your Rivals' Devices Receive</h2>
+  <p>When another runner races you in ranked mode, their device receives your VDOT score, fatigue profile, and recent maximum run distance so it can compute your simulated performance locally. It never receives your GPS data, your health inputs (weight, height, date of birth, gender), or your identity beyond username and rank.</p>
 
-  <h2 id="sharing">5. Data Sharing</h2>
-  <p>We share data only with infrastructure providers bound by Data Processing Agreements: Supabase (database), Railway (server), Upstash (caching), Firebase (push notifications), Apple/Google (authentication, payments), OpenAI (Coach+ text generation).</p>
-  <p>We use the Meta (Facebook) SDK for advertising attribution and campaign measurement. We never sell your personal data.</p>
+  <h2>7. Automated Decisions</h2>
+  <p>Runs and race results are validated by automated, rule-based server-side plausibility checks (speed, GPS accuracy, physiological consistency). These checks can invalidate results and, in serious cases, suspend accounts.</p>
+  <p>Every such decision includes a statement of reasons. Under GDPR Article 22 you have the right to human review, to express your point of view, and to contest the decision: write to <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a> — a person with authority to overturn the decision will answer within one month.</p>
 
-  <h2 id="strava">6. Strava Integration</h2>
-  <p>Connecting your Strava account is optional. If you choose to connect, AURENA acts as an independent data controller for the data we receive from Strava, separate from Strava itself. The two scopes we request are:</p>
-  <ul>
-    <li><strong>activity:read_all</strong> — used once per Strava connection to import summaries (Strava activity id, distance, duration, pace, cadence, elevation gain, start time) of your recent running activities, used to calculate your starting ELO. We use the last 90 days; if that window contains fewer than three runs we extend the search to the last 180 days. Only activities of type <em>Run</em>, <em>Trail Run</em>, or <em>Virtual Run</em> are read — never cycling, walking, swimming, or any other sport. We do not import GPS coordinates, photos, comments, or kudos. After the seed, we never call this scope again unless you disconnect and reconnect (which is rate-limited to once every 30 days).</li>
-    <li><strong>activity:write</strong> — used only when you explicitly tap "Share to Strava" on a finished AURENA run, to upload that one run as a Strava activity on your behalf. We never upload silently and we never schedule background uploads.</li>
-  </ul>
-  <p>Cached Strava activity summaries are deleted automatically <strong>seven (7) days</strong> after import, in line with the Strava API Agreement. We do not use Strava data to train, fine-tune, or evaluate any AI or machine-learning model — neither AI Coach nor any other feature receives Strava data. We do not display Strava data belonging to one user to any other user; only the derived ELO seed is visible on leaderboards.</p>
-  <p>Your Strava OAuth tokens are encrypted at rest using AES-256-GCM and only used by our server to talk to Strava on your behalf. When you disconnect (Settings → Strava → Disconnect) or delete your AURENA account, we revoke our access at Strava and delete every cached Strava-derived row from our database. You can revoke our access independently at any time from your Strava settings page on strava.com.</p>
-  <p>The Strava privacy policy applies to the data Strava continues to hold about you and is available at <a href="https://www.strava.com/legal/privacy">strava.com/legal/privacy</a>.</p>
+  <h2>8. Sharing and Processors</h2>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Transfer basis</th></tr>
+    <tr><td>Supabase</td><td>Database, authentication, storage</td><td>EU Standard Contractual Clauses</td></tr>
+    <tr><td>Google / Firebase</td><td>Push notifications, remote configuration</td><td>EU-US Data Privacy Framework</td></tr>
+    <tr><td>Apple &amp; Google</td><td>Sign-in and payments (independent controllers)</td><td>Their own terms</td></tr>
+    <tr><td>RevenueCat</td><td>Subscription management</td><td>EU Standard Contractual Clauses</td></tr>
+    <tr><td>GitHub</td><td>Static content delivery (voice model, these documents)</td><td>EU-US Data Privacy Framework</td></tr>
+  </table>
+  <p><strong>We never sell personal data, run ads, or share data with brokers or advertising networks.</strong></p>
 
-  <h2 id="transfers">7. International Transfers</h2>
-  <p>Data may be transferred outside the EEA. We use EU Standard Contractual Clauses and encryption for all transfers.</p>
+  <h2>9. International Transfers</h2>
+  <p>Some processors are US-based. Transfers to Google and GitHub rest on the EU-US Data Privacy Framework adequacy decision; all other US transfers rest on EU Standard Contractual Clauses (Decision (EU) 2021/914) with supplementary measures. A copy of the safeguards is available on request.</p>
 
-  <h2 id="retention">8. Data Retention</h2>
+  <h2>10. Features Not Currently Active</h2>
+  <p>The AI coach (OpenAI), Strava integration, curated AI-generated music, and live friend challenges exist in the app but are currently disabled. If we enable one of them, we will disclose it first — and where the feature sends your data to a new processor (for example OpenAI), we will ask for your consent before any data flows.</p>
+
+  <h2>11. Retention</h2>
   <ul>
     <li>Account data, runs, posts, matches: until you delete your account.</li>
-    <li>Raw GPS: processed in real time and immediately discarded.</li>
     <li>Club chat messages: automatically deleted after 30 days.</li>
-    <li>ELO audit log: 2 years.</li>
-    <li>Coach memory: rolling window of last 10 runs.</li>
-    <li>Strava cache (activity summaries): maximum 7 days from import.</li>
+    <li>AI-coach memory: rolling window of your last 10 runs.</li>
+    <li>ELO audit log: for the life of your account (competition-integrity evidence).</li>
   </ul>
-  <p>Account deletion is immediate and permanent.</p>
+  <p>Account deletion is immediate and permanent. A scheduled deletion option (30 days) also exists.</p>
 
-  <h2 id="rights">9. Your Rights</h2>
-  <p>Access, rectification, erasure, portability, objection, withdrawal of consent, and human review of automated decisions. Exercise via Settings → Privacy or <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>.</p>
-  <ul>
-    <li><strong>GDPR (EU/EEA):</strong> Full rights under Articles 15–22. Complaints to your local supervisory authority.</li>
-    <li><strong>CCPA (California):</strong> Right to know, delete, correct, opt out of sale. We do not sell personal information.</li>
-    <li><strong>LGPD (Brazil):</strong> Equivalent rights as GDPR.</li>
-  </ul>
+  <h2>12. Your Rights</h2>
+  <p>Access, rectification, erasure, portability, restriction, objection, withdrawal of consent, and human review of automated decisions. <strong>We grant these rights to all users worldwide, not only where the law requires it.</strong></p>
+  <p>In the app: full JSON data export (Settings, once per 24 hours) and immediate account deletion. Outside the app: <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a> or the <a href="delete-account.html">account deletion page</a>.</p>
 
-  <h2 id="children">10. Children</h2>
-  <p>AURENA is not intended for children under 16. The app enforces a minimum age of 16 during registration. We do not knowingly collect data from children.</p>
+  <h2>13. US State Privacy Rights</h2>
+  <p>The rights above apply to you. We do not sell personal information and do not share it for cross-context behavioral advertising. Residents of Washington, Nevada, Connecticut, and other states with consumer-health-data laws: see our separate <a href="health-data.html">Consumer Health Data Privacy Policy</a>.</p>
 
-  <h2 id="security">11. Security</h2>
-  <p>Passwordless auth, encrypted storage, TLS, Row-Level Security on all database tables, rate limiting, GPS spoof detection.</p>
+  <h2>14. Children</h2>
+  <p>RACERZ is not directed at children under 13, and the minimum age is 16. If we learn a user is under 13, we delete the account and its data. A date of birth, when provided, is used for age verification and stored with owner-only access.</p>
 
-  <h2 id="changes">12. Changes</h2>
-  <p>30 days notice for material changes via in-app notification.</p>
+  <h2>15. Security</h2>
+  <p>Row-Level Security on every database table, TLS on every connection, passwordless authentication, encrypted token storage, rate limiting, GPS-spoof detection, and server-side validation before any result counts.</p>
 
-  <footer>
-    Contact: <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a><br>
-    See also: <a href="terms.html">Terms of Service</a>
+  <h2>16. Data Breaches</h2>
+  <p>We notify the supervisory authority within 72 hours of becoming aware of a reportable breach, and affected users without undue delay where the risk to them is high.</p>
+
+  <h2>17. Changes</h2>
+  <p>We give 30 days notice of material changes via in-app notification.</p>
+
+  <h2>18. Contact</h2>
+  <p><a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a></p>
+
+  <footer class="legal-nav">
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Service</a> ·
+    <a href="health-data.html">Consumer Health Data Privacy Policy</a> ·
+    <a href="delete-account.html">Delete Account</a> ·
+    <a href="support.html">Support</a>
   </footer>
 </div>
 </body>
