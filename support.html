@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AURENA — Support</title>
+<title>RACERZ — Support</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -55,24 +55,22 @@
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 36px 0 12px;
+    margin: 40px 0 12px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
   }
+  h2:first-of-type { border-top: none; padding-top: 0; }
   p { margin: 0 0 12px; }
   ul { margin: 0 0 12px; padding-left: 22px; }
   li { margin-bottom: 6px; }
   a { color: var(--accent); }
+  a:hover { text-decoration: none; }
   .contact-card {
     background: var(--surface);
     border: 1px solid var(--rule);
-    border-left: 3px solid var(--accent);
-    padding: 20px 24px;
-    border-radius: 4px;
-    margin: 24px 0;
-  }
-  .contact-card a {
-    font-family: 'Chakra Petch', monospace;
-    font-weight: 600;
-    font-size: 18px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 0 12px;
   }
   footer {
     margin-top: 48px;
@@ -96,71 +94,75 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="brand">AURENA</div>
+    <div class="brand">RACERZ</div>
     <h1>Support</h1>
   </header>
 
   <p>
-    AURENA is a competitive ranked-running app that pairs runners against
-    each other in real-time PvP races. If you have a question, feedback, or
-    a problem with your AURENA account or your Strava connection, we are
-    happy to help.
+    RACERZ is a competitive ranked-running app that lets runners race each
+    other through simulated head-to-head races. If you have a question,
+    feedback, or a problem with your account, we are happy to help.
   </p>
 
   <div class="contact-card">
-    <h2 style="margin-top: 0;">Email Support</h2>
+    <h2 style="margin-top: 0; border-top: none; padding-top: 0;">Email Support</h2>
     <p>
       <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>
     </p>
     <p style="margin-bottom: 0; color: var(--text-muted); font-size: 14px;">
-      We aim to respond within two business days.
+      We aim to respond within two business days. This address is also our
+      single point of contact for users and authorities.
     </p>
   </div>
 
-  <h2>Strava Connection Issues</h2>
+  <h2>Report Content or a User</h2>
   <p>
-    If your Strava connection is not working as expected, please first try:
-  </p>
-  <ul>
-    <li>Open the app → Profile → Settings (gear icon) → tap <strong>Disconnect</strong> on the Strava row, then reconnect.</li>
-    <li>Make sure your Strava account has at least three running activities in the last 90 days (we extend to 180 days if you have fewer).</li>
-    <li>Confirm you authorized both <em>view activities</em> and <em>upload activities</em> when redirected to Strava.</li>
-  </ul>
-  <p>
-    Still stuck? Email us at the address above with a short description and
-    your AURENA username and we will look into it.
+    To report illegal content or content that violates our
+    <a href="terms.html">Terms of Service</a> (posts, comments, chat
+    messages, usernames, reward labels), email
+    <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>
+    with the username or a description of where you saw the content, and the
+    reason for your report. We confirm receipt, review every report, and
+    tell you the outcome. If we remove content or restrict an account, the
+    affected user receives a statement of reasons and can contest the
+    decision through the same address.
   </p>
 
   <h2>Privacy and Data Requests</h2>
   <p>
-    To exercise your rights under GDPR (access, rectification, erasure,
-    portability, objection), use the app's settings — Profile → Settings →
-    <strong>Download My Data</strong> for a full export, or email
-    <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>
-    for any other request. See the
-    <a href="privacy.html">Privacy Policy</a> for full details, including
-    our Strava integration policy.
+    To exercise your privacy rights (access, rectification, erasure,
+    portability, objection, consent withdrawal), use the app — Profile →
+    Settings → <strong>Download My Data</strong> for a full export — or
+    email us for any other request. See the
+    <a href="privacy.html">Privacy Policy</a> and the
+    <a href="health-data.html">Consumer Health Data Privacy Policy</a> for
+    details.
   </p>
 
   <h2>Account Deletion</h2>
   <p>
-    You can delete your AURENA account at any time from
-    Profile → Settings → <strong>Delete Account</strong>. Deletion is
-    immediate and permanent and includes:
-  </p>
-  <ul>
-    <li>Revoking AURENA's access at Strava on your behalf via Strava's deauthorize endpoint.</li>
-    <li>Purging every cached Strava activity summary, upload record, and OAuth token from our database.</li>
-    <li>Removing your AURENA profile, runs, posts, friendships, club memberships, and all derived statistics.</li>
-  </ul>
-  <p>
-    You may also revoke AURENA's Strava access independently from your
-    <a href="https://www.strava.com/settings/apps">Strava settings page</a>.
+    Delete your account any time from Profile → Settings →
+    <strong>Delete Account</strong> — immediate and permanent. If you no
+    longer have the app installed, see the
+    <a href="delete-account.html">account deletion page</a>.
   </p>
 
-  <footer>
+  <h2>Appeals</h2>
+  <p>
+    If a race result was invalidated or your account was restricted and you
+    believe it was a mistake, reply to the decision or write to
+    <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>
+    within 14 days. A person with authority to overturn the decision
+    reviews every appeal and answers within one month.
+  </p>
+
+  <footer class="legal-nav">
     Operated by Bred Applications · Doritshave 24, 6040 Egtved, Denmark · CVR 45915905<br>
-    See also: <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Service</a> ·
+    <a href="health-data.html">Consumer Health Data Privacy Policy</a> ·
+    <a href="delete-account.html">Delete Account</a> ·
+    <a href="support.html">Support</a>
   </footer>
 </div>
 </body>
