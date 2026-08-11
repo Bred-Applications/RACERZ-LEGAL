@@ -96,20 +96,21 @@
   <header>
     <div class="brand">RACERZ</div>
     <h1>Privacy Policy</h1>
-    <div class="meta">Version 2.0 — Effective 15 July 2026</div>
+    <div class="meta">Version 2.1 — Effective 11 August 2026</div>
   </header>
 
   <h2>1. Who We Are</h2>
   <p>The data controller is <strong>Bred Applications</strong>, CVR 45915905, Denmark. Contact: <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>.</p>
+  <p>We are not required to appoint a Data Protection Officer and have not appointed one. Privacy requests go to the address above.</p>
   <p>You can lodge a complaint with the Danish Data Protection Agency (<a href="https://www.datatilsynet.dk">Datatilsynet</a>) or the supervisory authority in your own country.</p>
 
   <h2>2. Data We Collect</h2>
   <p><strong>Account:</strong> email address, username, display name, avatar — via Apple Sign-In, Google Sign-In, or email magic link. We never collect or store passwords.</p>
-  <p><strong>Physiological data (health data — explicit consent, see section 4):</strong> weight, height, date of birth, gender.</p>
+  <p><strong>Physiological data (health data — explicit consent, see section 4):</strong> weight, height, gender.</p>
   <p><strong>Fitness and performance:</strong> distance, duration, pace, estimated calories, step count, cadence, per-kilometre splits, elevation, VDOT fitness score, fatigue profile, personal records, training zones.</p>
   <p><strong>Competitive:</strong> ELO ratings, match history, XP, coins, rank, season progression, penalties.</p>
   <p><strong>Social:</strong> posts, comments, likes, friendships, club membership, club chat messages, notifications.</p>
-  <p><strong>Device:</strong> a mock-location flag (anti-cheat) and a push notification token. <strong>We do not collect device model, OS version, advertising identifiers, contacts, or analytics events — RACERZ contains no analytics or advertising SDKs.</strong></p>
+  <p><strong>Device and technical:</strong> a mock-location flag (anti-cheat), a push notification token, and — for each ranked submission — your platform and app version together with a device-integrity check from Apple or Google. Our authentication provider records the IP address and browser/app identifier of each sign-in session for security. <strong>We do not collect advertising identifiers, contacts, or analytics events — RACERZ contains no analytics or advertising SDKs.</strong></p>
   <p><strong>Payment:</strong> subscription status via RevenueCat, keyed to your user ID. Payment card details never reach us — Apple and Google process all payments.</p>
   <p><strong>Feedback:</strong> if you rate the app or send us written feedback, we store your star rating, your message, and your app version and platform, keyed to your user ID.</p>
 
@@ -118,8 +119,9 @@
   <p>If you share a run, other users see a normalized route <em>shape</em> that has been mathematically stripped of absolute position, together with your run statistics — never where you ran. During races, opponents see your relative progress, never your location.</p>
 
   <h2>4. Health Data and Your Explicit Consent</h2>
-  <p>Your weight, height, date of birth, gender, and derived fitness metrics (VDOT score, fatigue profile) are treated as health data under GDPR Article 9. We process them only with your <strong>explicit consent</strong>, which the app requests as a separate step — not bundled into acceptance of the Terms.</p>
-  <p>That consent covers these purposes: simulating your performance as an opponent, fair matchmaking, anti-cheat validation, displaying the resulting race simulations to other users, and — when active — AI coaching. You can withdraw consent at any time in Settings; withdrawal disables the features that need the data and nothing else.</p>
+  <p>Your weight, height, gender, and derived fitness metrics (VDOT score, fatigue profile) are treated as health data under GDPR Article 9. We process them only with your <strong>explicit consent</strong>, which the app requests as a separate step — not bundled into acceptance of the Terms.</p>
+  <p>That consent covers these purposes: simulating your performance as an opponent, fair matchmaking, anti-cheat validation, displaying the resulting race simulations to other users, and — when active — AI coaching.</p>
+  <p>You can withdraw consent at any time in Settings. Withdrawing deletes your body data and derived metrics. Because ranked races are simulated from your fitness profile, ranked play stops working until you complete a new placement race. Everything else in RACERZ — free runs, the feed, clubs, your history — keeps working.</p>
 
   <h2>5. How We Use Data</h2>
   <ul>
@@ -128,12 +130,14 @@
     <li><strong>Legitimate interests:</strong> service security, abuse prevention, rate limiting (non-health signals only), and improving the app using feedback you choose to send us.</li>
     <li><strong>Consent:</strong> optional features such as push notifications and calendar access.</li>
   </ul>
+  <p>Providing an email address and username is necessary to create an account — without them there is no account to attach your runs and results to. Health data is optional: declining only disables the features that need it.</p>
+  <p>Where we rely on legitimate interests, we have weighed them against your interests and rights. The processing is limited to what keeps a competitive service honest and available — spotting impossible results, throttling abuse, and acting on feedback you chose to send — it never profiles you for advertising, is never sold or shared with brokers, and health signals are excluded from it. We consider that balance to fall in our favour, but it is yours to challenge: you may <strong>object at any time</strong> to any processing based on legitimate interests by writing to <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>, and we will stop unless we can show compelling grounds that override your objection.</p>
 
   <h2>6. Opponent Simulation — What Your Rivals' Devices Receive</h2>
-  <p>When another runner races you in ranked mode, their device receives your VDOT score, fatigue profile, and recent maximum run distance so it can compute your simulated performance locally. It never receives your GPS data, your health inputs (weight, height, date of birth, gender), or your identity beyond username and rank.</p>
+  <p>When another runner races you in ranked mode, their device receives your VDOT score, fatigue profile, and recent maximum run distance so it can compute your simulated performance locally. It never receives your GPS data, your health inputs (weight, height, gender), or your identity beyond username and rank.</p>
 
   <h2>7. Automated Decisions</h2>
-  <p>Runs and race results are validated by automated, rule-based server-side plausibility checks (speed, GPS accuracy, physiological consistency). These checks can invalidate results and, in serious cases, suspend accounts.</p>
+  <p>Runs and race results are validated by automated, rule-based server-side plausibility checks (speed, GPS accuracy, physiological consistency). What such a check can do is <strong>invalidate a single result</strong>: the race does not count, and no rating changes for either side. Nothing else follows from it automatically — <strong>no account is suspended or terminated by an automated process</strong>. A suspension is always a decision taken by a person.</p>
   <p>Every such decision includes a statement of reasons. Under GDPR Article 22 you have the right to human review, to express your point of view, and to contest the decision: write to <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a> — a person with authority to overturn the decision will answer within one month.</p>
 
   <h2>8. Sharing and Processors</h2>
@@ -145,10 +149,12 @@
     <tr><td>RevenueCat</td><td>Subscription management</td><td>EU Standard Contractual Clauses</td></tr>
     <tr><td>GitHub</td><td>Static content delivery (voice model, these documents)</td><td>EU-US Data Privacy Framework</td></tr>
   </table>
+  <p>If you share a run to Instagram, the image is handed to Instagram by your device; what happens to it is governed by Meta's terms, not ours.</p>
   <p><strong>We never sell personal data, run ads, or share data with brokers or advertising networks.</strong></p>
 
   <h2>9. International Transfers</h2>
-  <p>Some processors are US-based. Transfers to Google and GitHub rest on the EU-US Data Privacy Framework adequacy decision; all other US transfers rest on EU Standard Contractual Clauses (Decision (EU) 2021/914) with supplementary measures. A copy of the safeguards is available on request.</p>
+  <p><strong>Your account data, your runs, and your health data are stored in the European Union (Ireland).</strong> That is where our database, authentication, and storage live, and none of it is moved out of the EU to run the service.</p>
+  <p>Some supporting processors are US-based. Transfers to Google and GitHub rest on the EU-US Data Privacy Framework adequacy decision; all other US transfers rest on EU Standard Contractual Clauses (Decision (EU) 2021/914) with supplementary measures. A copy of the safeguards is available on request.</p>
 
   <h2>10. Features Not Currently Active</h2>
   <p>The AI coach (OpenAI), Strava integration, curated AI-generated music, and live friend challenges exist in the app but are currently disabled. If we enable one of them, we will disclose it first — and where the feature sends your data to a new processor (for example OpenAI), we will ask for your consent before any data flows.</p>
@@ -160,6 +166,8 @@
     <li>AI-coach memory: rolling window of your last 10 runs.</li>
     <li>ELO audit log: for the life of your account (competition-integrity evidence).</li>
     <li>Feedback (star rating and written message): until you delete your account.</li>
+    <li>Notifications and anti-cheat device records: automatically deleted after 90 days.</li>
+    <li>Backups: deleted account data disappears from routine backups within 30 days.</li>
   </ul>
   <p>Account deletion is immediate and permanent.</p>
 
@@ -171,7 +179,7 @@
   <p>The rights above apply to you. We do not sell personal information and do not share it for cross-context behavioral advertising. Residents of Washington, Nevada, Connecticut, and other states with consumer-health-data laws: see our separate <a href="health-data.html">Consumer Health Data Privacy Policy</a>.</p>
 
   <h2>14. Children</h2>
-  <p>RACERZ is not directed at children under 13, and the minimum age is 16. If we learn a user is under 13, we delete the account and its data. A date of birth, when provided, is used for age verification and stored with owner-only access.</p>
+  <p>RACERZ is not directed at children. You must be at least 16 years old to use it; you confirm this when you accept the Terms. We do not collect a date of birth and do not otherwise verify age. If we learn that a user is under 16, we delete the account and its data.</p>
 
   <h2>15. Security</h2>
   <p>Row-Level Security on every database table, TLS on every connection, passwordless authentication, encrypted token storage, rate limiting, GPS-spoof detection, and server-side validation before any result counts.</p>
