@@ -108,6 +108,7 @@
   <p><strong>Account:</strong> email address, username, display name, avatar — via Apple Sign-In, Google Sign-In, or email magic link. We never collect or store passwords.</p>
   <p><strong>Physiological data (health data — explicit consent, see section 4):</strong> weight, height, gender.</p>
   <p><strong>Fitness and performance:</strong> distance, duration, pace, estimated calories, step count, cadence, per-kilometre splits, elevation, VDOT fitness score, fatigue profile, personal records, training zones.</p>
+  <p><strong>Route shape:</strong> for every run we store a normalized outline of its shape — the route reduced to a simplified line, scaled into a unit square so that absolute position is removed before it leaves your device, plus a coarse area type (urban, park, or mixed). It is what lets a run card draw a map without us holding a map. It cannot be turned back into coordinates or matched to a place.</p>
   <p><strong>Competitive:</strong> ELO ratings, match history, XP, coins, rank, season progression, penalties.</p>
   <p><strong>Social:</strong> posts, comments, likes, friendships, club membership, club chat messages, notifications.</p>
   <p><strong>Device and technical:</strong> a mock-location flag (anti-cheat), a push notification token, and — for each ranked submission — your platform and app version together with a device-integrity check from Apple or Google. Our authentication provider records the IP address and browser/app identifier of each sign-in session for security. <strong>We do not collect advertising identifiers, contacts, or analytics events — RACERZ contains no analytics or advertising SDKs.</strong></p>
@@ -115,12 +116,13 @@
   <p><strong>Feedback:</strong> if you rate the app or send us written feedback, we store your star rating, your message, and your app version and platform, keyed to your user ID.</p>
 
   <h2>3. GPS and Location</h2>
-  <p>GPS coordinates are processed in real time during your runs for distance calculation and validation, and are <strong>never stored on our servers</strong> — no coordinates, no route polylines. Your routes are stored only on your own device.</p>
-  <p>If you share a run, other users see a normalized route <em>shape</em> that has been mathematically stripped of absolute position, together with your run statistics — never where you ran. During races, opponents see your relative progress, never your location.</p>
+  <p>GPS coordinates are processed in real time during your runs for distance calculation and validation, and are <strong>never stored on our servers</strong> — no coordinates, no route polylines.</p>
+  <p><strong>Your route maps live only on your own phone.</strong> They are held in a folder belonging to your account, so a different account signing in on the same handset cannot see them. We hold no copy, so no server-side retention period applies to them: they stay until you delete the run, delete your account, or remove the app, and they are included in whatever device backup you have switched on with Apple or Google. If a race result cannot be sent for validation straight away, that run's coordinates are also held on your phone until it can be — in temporary storage excluded from device backups, cleared once the result goes through and whenever you log out.</p>
+  <p>What we do store for every run is the normalized route <em>shape</em> described in section 2 — the outline with absolute position mathematically stripped out. It is what draws the map on a run card. If you share a run, that shape and your run statistics are what other users see — never where you ran. During races, opponents see your relative progress, never your location.</p>
 
   <h2>4. Health Data and Your Explicit Consent</h2>
   <p>Your weight, height, gender, and derived fitness metrics (VDOT score, fatigue profile) are treated as health data under GDPR Article 9. We process them only with your <strong>explicit consent</strong>, which the app requests as a separate step — not bundled into acceptance of the Terms.</p>
-  <p>That consent covers these purposes: simulating your performance as an opponent, fair matchmaking, anti-cheat validation, displaying the resulting race simulations to other users, and — when active — AI coaching.</p>
+  <p>That consent covers these purposes: simulating your performance as an opponent, fair matchmaking, anti-cheat validation, and displaying the resulting race simulations to other users.</p>
   <p>You can withdraw consent at any time in Settings. Withdrawing deletes your body data and derived metrics. Because ranked races are simulated from your fitness profile, ranked play stops working until you complete a new placement race. Everything else in RACERZ — free runs, the feed, clubs, your history — keeps working.</p>
 
   <h2>5. How We Use Data</h2>
@@ -157,13 +159,13 @@
   <p>Some supporting processors are US-based. Transfers to Google and GitHub rest on the EU-US Data Privacy Framework adequacy decision; all other US transfers rest on EU Standard Contractual Clauses (Decision (EU) 2021/914) with supplementary measures. A copy of the safeguards is available on request.</p>
 
   <h2>10. Features Not Currently Active</h2>
-  <p>The AI coach (OpenAI), Strava integration, curated AI-generated music, and live friend challenges exist in the app but are currently disabled. If we enable one of them, we will disclose it first — and where the feature sends your data to a new processor (for example OpenAI), we will ask for your consent before any data flows.</p>
+  <p>Strava integration and live friend challenges exist in the app but are currently disabled. If we enable one of them, we will disclose it first — and where the feature would send your data to a processor not listed in section 8, we will ask for your consent before any data flows.</p>
 
   <h2>11. Retention</h2>
   <ul>
     <li>Account data, runs, posts, matches: until you delete your account.</li>
     <li>Club chat messages: automatically deleted after 30 days.</li>
-    <li>AI-coach memory: rolling window of your last 10 runs.</li>
+    <li>Route maps on your device: no server retention applies — we hold no copy. They stay on the phone until you delete the run, delete your account, or remove the app.</li>
     <li>ELO audit log: for the life of your account (competition-integrity evidence).</li>
     <li>Feedback (star rating and written message): until you delete your account.</li>
     <li>Notifications and anti-cheat device records: automatically deleted after 90 days.</li>
