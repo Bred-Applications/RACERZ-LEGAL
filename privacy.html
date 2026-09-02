@@ -112,7 +112,7 @@
   <p><strong>Competitive:</strong> ELO ratings, match history, XP, coins, rank, season progression, penalties.</p>
   <p><strong>Social:</strong> posts, comments, likes, friendships, club membership, club chat messages, notifications.</p>
   <p><strong>Device and technical:</strong> a mock-location flag (anti-cheat), a push notification token, and — for each ranked submission — your platform and app version together with a device-integrity check from Apple or Google. Our authentication provider records the IP address and browser/app identifier of each sign-in session for security. <strong>We do not collect advertising identifiers or contacts.</strong></p>
-  <p><strong>Product analytics:</strong> we use TelemetryDeck (TelemetryDeck GmbH, Augsburg, Germany; hosted in the EU) to learn which screens are used and in what order — for example whether the placement race was started from onboarding or booked for later. The identifier is hashed on your device with a salt before it is sent and hashed again on arrival; it cannot be linked back to you, your account or your IP address, which is never stored. Analytics never contains your location, your runs, your pace, your body data, your health consent or your user ID. Because it cannot be tied to an account, it is not part of your data export and is not affected by account deletion.</p>
+  <p><strong>Product analytics:</strong> we use TelemetryDeck (TelemetryDeck GmbH, Augsburg, Germany; hosted in the EU) to learn which screens are used and in what order — for example whether the placement race was started from onboarding or booked for later. The identifier is hashed on your device with a salt before it is sent and hashed again on arrival; it cannot be linked back to you, your account or your IP address, which TelemetryDeck does not store. Analytics never contains your location, your runs, your pace, your body data, your health consent or your user ID. Because it cannot be tied to an account, it is not part of your data export and is not affected by account deletion.</p>
   <p><strong>Payment:</strong> subscription status via RevenueCat, keyed to your user ID. Payment card details never reach us — Apple and Google process all payments.</p>
   <p><strong>Feedback:</strong> if you rate the app or send us written feedback, we store your star rating, your message, and your app version and platform, keyed to your user ID.</p>
 
@@ -133,6 +133,7 @@
     <li><strong>Legitimate interests:</strong> service security, abuse prevention, rate limiting (non-health signals only), and improving the app using feedback you choose to send us.</li>
     <li><strong>Consent:</strong> optional features such as push notifications and calendar access.</li>
   </ul>
+  <p>Product analytics rests on legitimate interest (Article 6(1)(f)): the interest is to see which screens are used so the app can be improved, and it works on data that cannot identify you.</p>
   <p>Providing an email address and username is necessary to create an account — without them there is no account to attach your runs and results to. Health data is optional: declining only disables the features that need it.</p>
   <p>Where we rely on legitimate interests, we have weighed them against your interests and rights. The processing is limited to what keeps a competitive service honest and available — spotting impossible results, throttling abuse, and acting on feedback you chose to send — it never profiles you for advertising, is never sold or shared with brokers, and health signals are excluded from it. We consider that balance to fall in our favour, but it is yours to challenge: you may <strong>object at any time</strong> to any processing based on legitimate interests by writing to <a href="mailto:contact@bredapplications.com">contact@bredapplications.com</a>, and we will stop unless we can show compelling grounds that override your objection.</p>
 
@@ -150,7 +151,7 @@
     <tr><td>Google / Firebase</td><td>Push notifications, remote configuration</td><td>EU-US Data Privacy Framework</td></tr>
     <tr><td>Apple &amp; Google</td><td>Sign-in and payments (independent controllers)</td><td>Their own terms</td></tr>
     <tr><td>RevenueCat</td><td>Subscription management</td><td>EU Standard Contractual Clauses</td></tr>
-    <tr><td>TelemetryDeck</td><td>Anonymised product analytics</td><td>EU-hosted; no personal data</td></tr>
+    <tr><td>TelemetryDeck</td><td>Anonymised product analytics</td><td>EU-hosted; anonymised usage events, no account id</td></tr>
     <tr><td>GitHub</td><td>Static content delivery (voice model, these documents)</td><td>EU-US Data Privacy Framework</td></tr>
   </table>
   <p>If you share a run to Instagram, the image is handed to Instagram by your device; what happens to it is governed by Meta's terms, not ours.</p>
@@ -172,6 +173,7 @@
     <li>ELO audit log: for the life of your account (competition-integrity evidence).</li>
     <li>Feedback (star rating and written message): until you delete your account.</li>
     <li>Notifications and anti-cheat device records: automatically deleted after 90 days.</li>
+    <li>Product analytics: TelemetryDeck retains analytics events in anonymised form and they are not tied to your account, so they are not deleted with it.</li>
     <li>Backups: deleted account data disappears from routine backups within 30 days.</li>
   </ul>
   <p>Account deletion is immediate and permanent.</p>
